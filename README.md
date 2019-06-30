@@ -23,6 +23,7 @@ Things you may want to cover:
 ### Association
 - has_many group_useres
 - has_many comment
+- has_many :group, through: :group_users
 
 ## groupsテーブル
 
@@ -33,6 +34,7 @@ Things you may want to cover:
 ### Association
 - has_many group_useres
 - has_many comment
+- has_many :usere, through: :group_users
 
 ## commentsテーブル
 
