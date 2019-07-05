@@ -7,13 +7,13 @@
           %p.side-header__user-name kouka
           %ul.user-menu
             %li.user-menu__edit-user
-              = link_to '/groups/new' do
+              = link_to '#' do
                 %i.fa.fa-edit
             %li.user-menu__new-group
-              = link_to 'aa' do
+              = link_to '#' do
                 %i.fa.fa-cog
         .groups
-          = link_to 'aa' do
+          = link_to '#' do
             .grooup
               %p.group__group-name  おはよう
               %p.group__latest-message まだメッセージがありません
@@ -35,14 +35,3 @@
                 %i.fa.fa-image
                 = f.file_field :image, class: 'image-label__file', id: "message_image"
             = f.submit 'Send', class: 'submit-btn'
-        
-        -# .form
-        -#   %form.new_message{:name => "utf8", :action => "/", :enctype => "multipart/form-data", :method => "post"}
-        -#     %input{:name => "utf8", :type => "hidden", :value => "/"}
-        -#     %input{:type => "hidden", :name => "authenticity_token", :value => "/"}
-        -#     .input-box
-        -#       %input{:placeholder => "type a message", :class => "input-box__text", :type => "text", :name => "message[content]", :id => "message_content"}
-        -#       %lebel{:class => "image-label", :for => "message_image"}
-        -#         %i.fa.fa-image
-        -#         %input{:class => "image-label__input", :type => "file", :name => "message[image]", :id => "message_image"}
-        -#     %input{:type => "submit", :name => "commit", :value => "Send", :class => "new-message__submit-btn", :data_disable_with => "Send"}
