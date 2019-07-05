@@ -35,7 +35,6 @@ Things you may want to cover:
 - has_many group_useres
 - has_many comment
 - has_many :usere, through: :group_users
-
 ## commentsテーブル
 
 |Column|Type|Options|
