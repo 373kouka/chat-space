@@ -12,21 +12,12 @@ div {
   padding: 0;
 }
 
-form {
-  margin: 0;
-  padding: 0;
-}
-
 .flash-box {
   color: white;
   font-size: 1rem;
   font-weight: lighter;
   text-align: center;
   width: 100vw;
-}
-
-.new-message {
-  display: flex;
 }
 
 .wrapper {
@@ -131,6 +122,7 @@ form {
       background-color: #FAFAFA;
       padding: 46px 40px 0;
       height: calc(100vh - 190px);
+      overflow: scroll;
       .message {
         .upper-message {
           display: flex;
