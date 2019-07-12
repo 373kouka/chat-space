@@ -12,21 +12,12 @@ div {
   padding: 0;
 }
 
-form {
-  margin: 0;
-  padding: 0;
-}
-
 .flash-box {
   color: white;
   font-size: 1rem;
   font-weight: lighter;
   text-align: center;
   width: 100vw;
-}
-
-.new-message {
-  display: flex;
 }
 
 .wrapper {
@@ -128,20 +119,34 @@ form {
     }
 
     .messages {
+      background-color: #FAFAFA;
+      padding: 46px 40px 0;
       height: calc(100vh - 190px);
-      padding: 46px 40px;
-      background-color: #fafafa;
       overflow: scroll;
+      .message {
+        .upper-message {
+          display: flex;
+          &__user-name {
+            color: #434a54;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          &__date {
+            color: #999999;
+            font-size: 12px;
+            padding-left: 10px;
+          }
+        }
+        .lower-message {
+          margin-top: 10px;
+          &__content {
+            color: #434a54;
+            font-size: 14px;
+            margin-bottom: 40px;
+          }
+        }
+      }
     }
-
-
-      .new_message {
-        display: flex;
-        height: 90px;
-        padding: 20px 40px;
-        background-color: #ddd;
-    
-
         input, textarea, select {
           font-family: inherit;
           font-size: inherit;
@@ -149,44 +154,51 @@ form {
         }
 
 
-        .input-box {
-          position: relative;
+      
+    .form {
+      height: 90px;
+      padding: 20px 40px;
+      background-color: #ddd;
+      .new_message {
+        display: flex;
+      }
+      .input-box {
+        position: relative;
+        width: 100%;
+        &__text {
+          height: 50px;
           width: 100%;
-
-          &__text {
-            height: 50px;
-            width: 100%;
-            padding: 0 40px 0 10px;
-            color: #434a54;
-            border-style: none;
+          padding: 0 40px 0 10px;
+          color: #434a54;
+          border-style: none;
+        }
+        .image-label__input {
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
           }
-          .image-label__input {
-            font-size: 1.3rem;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-
-            .fa {
-              display: inline-block;
-              font: normal normal normal 14px/1 FontAwesome;
-              font-size: inherit;
-              text-rendering: auto;
-            }
-            .image-label__file {
-              display: none;
-          }
+          .image-label__file {
+            display: none;
           }
         }
       }
+      .submit-btn {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+        }
+      }  
+    }
   }
-}
-.submit-btn {
-  width: 100px;
-  height: 50px;
-  padding: 0 30px;
-  margin-left: 15px;
-  background-color: #38aef0;
-  color: white;
-  cursor: pointer;
-}
+  
