@@ -1,0 +1,6 @@
+.group
+  = link_to group_messages_path(fuga) do
+    .group__name
+      = fuga.name
+    .group__message
+      = fuga.show_last_message
